@@ -9,9 +9,6 @@ public class Wheel {
     private int diameter;
     private int indexOfCarryingCapacity;
 
-    public Wheel(){
-    }
-
     public int getDiameter() {
         return diameter;
     }

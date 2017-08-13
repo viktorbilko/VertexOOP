@@ -6,17 +6,20 @@ package vertexOOP.lesson1.homework;
 
 public class Car {
 
-
     private String model;
     private String color;
     private double engine;
     private int fuelTank;
 
+    protected Wheel wheel = new Wheel();
 
-    private Wheel wheel = new Wheel();
+    public void createdWheel(){
+        wheel.setDiameter(15);
+        wheel.setIndexOfCarryingCapacity(3);
+    }
 
     public void drive(){
-        System.out.println("Speed max 200 km/h");
+        System.out.println("Speed max 220 km/h");
     }
 
     public String getModel() {
