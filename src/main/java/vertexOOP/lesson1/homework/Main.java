@@ -26,6 +26,7 @@ public class Main {
             number = scanner.nextInt();
         } else {
             System.out.println("You enter not integer");
+            return;
         }
 
         scanner.close();
@@ -48,6 +49,7 @@ public class Main {
                 Truck truck = new Truck();
                 truck.setFuelTank(400);
                 truck.print();
+                break;
             default:
                 System.out.println("We dont have car with serial number " + number);
         }

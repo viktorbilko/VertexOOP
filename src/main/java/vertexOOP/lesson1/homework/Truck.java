@@ -14,7 +14,7 @@ public class Truck extends Car {
     @Override
     public void print() {
         super.print();
-        System.out.println("Lifting capacity: " + getLiftingCapacity());
+        System.out.println("Lifting capacity: " + getLiftingCapacity() + "kg");
     }
 
     @Override
@@ -26,7 +26,7 @@ public class Truck extends Car {
     public String createdWheel() {
         wheel = new Wheel();
         wheel.setDiameter(40);
-        wheel.setIndexOfCarryingCapacity(3);
+        wheel.setIndexOfCarryingCapacity(10);
 
         Wheel [] wheels = new Wheel[4];
 
@@ -35,6 +35,6 @@ public class Truck extends Car {
             wheels[i++] = wheel;
         }
 
-        return "Wheel amount: " + wheels.length + "; diametr: " + wheel.getDiameter() + "; index of carrying capacity";
+        return "Wheel amount: " + wheels.length + "; diametr: " + wheel.getDiameter() + "; index of carrying capacity " + wheel.getIndexOfCarryingCapacity();
     }
 }

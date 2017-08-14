@@ -25,6 +25,6 @@ public class SportCar extends Car {
             wheels[i++] = wheel;
         }
 
-        return "Wheel amount: " + wheels.length + "; diametr: " + wheel.getDiameter() + "; index of carrying capacity";
+        return "Wheel amount: " + wheels.length + "; diametr: " + wheel.getDiameter() + "; index of carrying capacity " + wheel.getIndexOfCarryingCapacity();
     }
 }
