@@ -7,7 +7,7 @@ package vertexOOP.lesson1.homework;
 public class Wheel {
 
     private int diameter;
-    private int indexOfCarryingCapacity;
+    private int indexOfCarryingCapacity; //вантажопідйомність
 
     public int getDiameter() {
         return diameter;
