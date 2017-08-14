@@ -24,6 +24,8 @@ public class Main {
 
         if(scanner.hasNextInt()){
             number = scanner.nextInt();
+        } else {
+            System.out.println("You enter not integer");
         }
 
         scanner.close();
