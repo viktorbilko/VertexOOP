@@ -8,6 +8,14 @@ public class Project {
     private String name;
     private String startDate;
 
+    public String getName() {
+        return name;
+    }
+
+    public String getStartDate() {
+        return startDate;
+    }
+
     public Project(String name, String startDate) {
         this.name = name;
         this.startDate = startDate;

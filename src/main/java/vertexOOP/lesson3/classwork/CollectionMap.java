@@ -14,19 +14,26 @@ public class CollectionMap {
         HashMap<Integer, Object> map = new HashMap<>();
 
         fill(map);
-        print(map);
+        System.out.println(map);
 
-        List listUsers = sortCollectionToUser(map);
-        List listProject = sortCollectionToProject(map);
+        List <User> listUsers = sortCollectionToUser(map);
+        List <Project> listProject = sortCollectionToProject(map);
 
-        printArrayList(listUsers);
-        printArrayList(listProject);
+        System.out.println(listUsers.size());
+        printListUser(listUsers);
+        printListProject(listProject);
     }
 
-    private static void printArrayList(List list) {
+    private static void printListProject(List<Project> listProject) {
+        for (Project project : listProject) {
+            System.out.println("Project name: " + project.getName() + ", start date: " + project.getStartDate());
+        }
+    }
 
-
-        System.out.println(list);
+    private static void printListUser(List<User> listUsers) {
+        for (User listUser : listUsers) {
+            System.out.println("Name user: " + listUser.getName());
+        }
     }
 
     private static List<Project> sortCollectionToProject(HashMap<Integer, Object> map) {
@@ -51,16 +58,12 @@ public class CollectionMap {
         return listUser;
     }
 
-    private static void print(HashMap<Integer, Object> map) {
-        System.out.println(map.entrySet());
-    }
-
     private static void fill(HashMap<Integer, Object> map) {
         for (int i = 0; i < 20; i++) {
-            if (i < 0){
-                map.put(i,new User("Alex"));
+            if (i < 10){
+                map.put(i,new User("Alex"+ i));
             } else  {
-                map.put(i, new Project("MyProject"," 28.08.2017"));
+                map.put(i, new Project("MyProject" + " " + i," 28.08.2017"));
             }
         }
     }

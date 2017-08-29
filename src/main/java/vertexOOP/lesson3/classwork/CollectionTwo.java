@@ -13,8 +13,6 @@ public class CollectionTwo {
 
         List full = new LinkedList<>();
 
-
-
         IntStream.range(0,10).forEach(s -> full.add(s));
 
         full.add("A");
