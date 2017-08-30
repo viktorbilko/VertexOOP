@@ -26,7 +26,8 @@ public class MainCar {
             car1.addHuman(rand);
             car1.printAboutMe();
         }
-/*        car1.printAboutMe();
-        car2.printAboutMe();*/
+
+        car1.printAboutMe();
+        car2.printAboutMe();
     }
 }
