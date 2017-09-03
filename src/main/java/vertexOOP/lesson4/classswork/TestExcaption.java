@@ -21,5 +21,4 @@ public class TestExcaption {
     private static int sum(int i, int i1) throws  Exception {
         throw new NullPointerException();
     }
-
 }
