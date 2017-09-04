@@ -1,0 +1,15 @@
+User number: 1
+username: 
+age: 25
+hobby: football
+
+User number: 1
+username: 
+age: 22
+hobby: football
+
+User number: 1
+username: 
+age: 21
+hobby: swim
+
