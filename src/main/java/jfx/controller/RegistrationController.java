@@ -14,7 +14,7 @@ import java.util.ResourceBundle;
  */
 public class RegistrationController implements Initializable {
 
-    List <String> list = new LinkedList<>();
+    private List <String> list = new LinkedList<>();
 
     @FXML
     private CheckBox checkLicence;
@@ -44,11 +44,11 @@ public class RegistrationController implements Initializable {
     private void save(){
         if (checkLicence.isSelected()) {
             list.add(txtname.getText());
+            list.add(txtsurname.getText());
             list.add(date.getValue().toString());
             list.add(text.getText());
         } else {
             System.out.println("Not");
         }
-
     }
 }
