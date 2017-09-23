@@ -36,12 +36,11 @@ public class RegistrationController implements Initializable {
 
         btnSave.setOnAction(event -> save());
 
-
         btnPrint.setOnAction(event -> System.out.println(list));
-
     }
 
-    private void save(){
+    private void save() throws NullPointerException{
+
         if (checkLicence.isSelected()) {
             list.add(txtname.getText());
             list.add(txtsurname.getText());
